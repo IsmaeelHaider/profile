@@ -10,6 +10,7 @@ import Cards from "./components/Cards";
 import About from "./components/sections/About";
 import Skills from "./components/sections/Skills";
 import Experience from "./components/sections/Experience";
+import Contact from "./components/sections/Contact";
 
 // const defaultTheme = createTheme({
 //     palette: {
@@ -88,6 +89,10 @@ const App: FunctionComponent = () => {
 
                 <section id="experience" ref={expRef}>
                     <Experience/>
+                </section>
+
+                <section id="contact" ref={contactRef}>
+                    <Contact/>
                 </section>
             </Layout>
         </ThemeProvider>

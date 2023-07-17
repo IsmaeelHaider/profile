@@ -48,7 +48,7 @@ const ExperienceTimeline: FunctionComponent = () => {
                         Development Lead
                     </Typography>
                     <p>
-                        I successfully led an 11-person team in integrating cryptocurrency trading into the traditional
+                        I successfully led an 11-person team for integrating cryptocurrency trading into the traditional
                         banking sector. This innovation provided financial institutions with a new way to attract and
                         retain users while expanding their services. The project involved designing and implementing
                         REST APIs powered by AWS API Gateway and Lambda for user authentication, trade viewing, and
