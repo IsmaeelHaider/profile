@@ -52,11 +52,11 @@ const App: FunctionComponent = () => {
     useEffect(() => {
         const {hash} = location;
         const targetRefs: { [key: string]: React.RefObject<HTMLDivElement> } = {
-            "#home": homeRef,
-            "#about": aboutRef,
-            "#skills": skillsRef,
-            "#experience": expRef,
-            "#contact": contactRef,
+            "profile/#home": homeRef,
+            "profile/#about": aboutRef,
+            "profile/#skills": skillsRef,
+            "profile/#experience": expRef,
+            "profile/#contact": contactRef
         };
 
         const targetRef = targetRefs[hash];
