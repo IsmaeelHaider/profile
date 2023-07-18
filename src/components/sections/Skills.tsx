@@ -89,11 +89,11 @@ const Skills: FunctionComponent = () => {
                     gutterBottom
                     sx={{fontWeight: "bold", color: "secondary.main"}}
                 >
-                    Skills & Tools I Possess
+                    Skillset and Tools
                 </Typography>
                 <p>
-                    I develop simple, intuitive and responsive user interface with fast, scalable and secure backend
-                    servers that helps end users get things done with less effort and time.
+                    I develop simple, intuitive and responsive user interfaces with fast, scalable and secure backend
+                    servers.
                 </p>
 
                 <Stack

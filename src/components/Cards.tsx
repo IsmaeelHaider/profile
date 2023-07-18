@@ -11,7 +11,7 @@ const containerWrapper = {
 const stackWrapper = {
     "@media (max-width: 1023px)": {
         flexDirection: "column",
-        alignItems: "center",
+        alignItems: "center"
     },
 };
 

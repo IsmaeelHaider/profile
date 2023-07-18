@@ -87,26 +87,25 @@ const About: FunctionComponent = () => {
                 </Typography>
                 <p className="about-me">
                     Hi! I'm Ismaeel Haider, and I am an experienced full-stack
-                    developer / data engineer with over 7+ years of experience. I am
-                    proficient with ReactJS. I've
-                    created captivating and responsive user interfaces using React with bootstrap and MUI. On the
-                    back-end side, I excel in serverless architecture, AWS Services,
-                    Python, FastAPI, Flask, and Django, with both monolithic and microservice architectures. I'm expert
-                    in
-                    creating scalable and efficient server-side solutions. I've also created plenty of data warehouses
-                    and data lakes which powered BI tools and AI/ML algorithms.
+                    developer / data engineer with 7+ years of experience. On the frontend I am
+                    proficient with ReactJS. I've created captivating and responsive user interfaces using React with
+                    bootstrap and MUI.
+                    On the back-end, I excel in serverless architecture, AWS Services, Python, FastAPI, Flask, and
+                    Django, with both monolithic and microservice architectures. I'm expert in creating scalable and
+                    efficient server-side solutions. I've also created plenty of data warehouses and data lakes which
+                    powered BI tools and AI/ML algorithms.
                 </p>
                 <p>
-                    I have a vast experience working on projects with global clients and diverse teams with a one-team
-                    model following agile methodologies like Sprint planning and Scrum which includes various tools e.g.
-                    Jira, Kanban model, Trello, Slack, Teams, Git versioning, and CI/CD pipelines. With a commitment to
-                    write clean code and a passion for continuous learning, I am
-                    dedicated to deliver high-quality software solutions. I believe in
-                    collaborative and detail-oriented team environment, I thrive to take
-                    on new challenges and exceeding client expectations.
+                    I have extensive experience collaborating on projects involving multinational clients and diverse
+                    teams, employing a unified approach like the one-team model and following agile methodologies such
+                    as Sprint planning and Scrum. This includes utilizing various tools like Jira, Kanban model, Trello,
+                    Slack, Teams, Git versioning, and CI/CD pipelines. I am dedicated to writing clean code and have a
+                    strong commitment to continuous learning, striving to deliver software solutions of the highest
+                    quality. I believe in fostering a collaborative and detail-oriented team environment, and I thrive
+                    on embracing new challenges and surpassing client expectations.
                 </p>
                 <p>
-                    Connect with Me today to bring your project to life with my expertise.
+                    Connect with me today to bring your project to life with my expertise.
                 </p>
 
                 <Stack spacing={2} direction="row" ref={containerRef}>

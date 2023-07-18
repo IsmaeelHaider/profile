@@ -86,7 +86,7 @@ const HeroBanner: FunctionComponent = () => {
                     <TextSVG/>
                 </ImageContainer>
                 <Title>
-                    Nice to meet you! I'm Senior software engineer, expert in Python, AWS and ReactJS.
+                    Nice to meet you! I'm Senior Software Engineer, proficient in Python, AWS and ReactJS.
                 </Title>
                 <Button
                     variant="contained"

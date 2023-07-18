@@ -1,5 +1,5 @@
 import React, {FunctionComponent} from "react";
-import {EmailOutlined, PhoneOutlined} from "@mui/icons-material";
+import {EmailOutlined, PhoneOutlined, LinkedIn} from "@mui/icons-material";
 import {Typography, Box, Link} from "@mui/material";
 
 const ContactDetails: FunctionComponent = () => {
@@ -11,7 +11,7 @@ const ContactDetails: FunctionComponent = () => {
                     gutterBottom
                     sx={{fontWeight: "bold", color: "secondary.main"}}
                 >
-                    Hey there! Got any cool stuff to share or just feeling like saying hi?
+                    Hey there! Got any cool stuff to share or just feel like saying Hi?
                 </Typography>
                 <p>
                     Don't hold back—drop me a
@@ -19,7 +19,7 @@ const ContactDetails: FunctionComponent = () => {
                 </p>
             </Box>
             <Box sx={{display: "flex", marginTop: "10%"}}>
-                <PhoneOutlined sx={{marginRight: "20px"}}/>
+                <PhoneOutlined sx={{marginRight: "20px", marginTop:"5%"}}/>
                 <Box sx={{display: "flex", flexDirection: "column"}}>
                     <Typography
                         variant="h6"
@@ -46,7 +46,7 @@ const ContactDetails: FunctionComponent = () => {
                 </Box>
             </Box>
             <Box sx={{display: "flex", marginTop: "5%"}}>
-                <EmailOutlined sx={{marginRight: "20px"}}/>
+                <EmailOutlined sx={{marginRight: "20px", marginTop:"5%"}}/>
                 <Box sx={{display: "flex", flexDirection: "column"}}>
                     <Typography
                         variant="h6"
@@ -70,6 +70,34 @@ const ContactDetails: FunctionComponent = () => {
                         }}
                     >
                         ismaeelhaider92@gmail.com
+                    </Link>
+                </Box>
+            </Box>
+            <Box sx={{display: "flex", marginTop: "5%"}}>
+                <LinkedIn sx={{marginRight: "20px", marginTop:"5%"}}/>
+                <Box sx={{display: "flex", flexDirection: "column"}}>
+                    <Typography
+                        variant="h6"
+                        gutterBottom
+                        sx={{
+                            fontWeight: "bold",
+                            color: "#fff",
+                        }}
+                    >
+                        LinkedIn:
+                    </Typography>
+
+                    <Link
+                        href="https://www.linkedin.com/in/ismaeelhaider/"
+                        underline="none"
+                        sx={{
+                            color: "#fff",
+                            ":hover": {
+                                color: "primary.main",
+                            },
+                        }}
+                    >
+                        https://www.linkedin.com/in/ismaeelhaider/
                     </Link>
                 </Box>
             </Box>
