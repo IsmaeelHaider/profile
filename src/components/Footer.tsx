@@ -35,7 +35,7 @@ const Footer: FunctionComponent = () => {
             <Box color="secondary.main">
                 2023 Powered by:{" "}
                 <Link
-                    href="https:www.ismaeelhaider.com"
+                    href="/"
                     underline="none"
                     sx={{
                         color: "secondary.main",
