@@ -1,9 +1,8 @@
-import React, {FunctionComponent, useEffect, useRef} from "react";
+import React, {FunctionComponent, useRef} from "react";
 import styled, {css} from "styled-components";
 import Container from "@mui/material/Container";
 import {ReactComponent as TextSVG} from "../../assets/heroBanner/eng.svg";
 import Button from "@mui/material/Button";
-import {useLocation} from "react-router-dom";
 import {Link} from "react-router-dom";
 
 const ContainerWrapperClass = {
@@ -46,38 +45,6 @@ const Title = styled.h1`
 
 const HeroBanner: FunctionComponent = () => {
     const containerRef = useRef(null);
-    const location = useLocation();
-
-    useEffect(() => {
-        const options = {
-            root: null,
-            rootMargin: "0px",
-            threshold: 0.5,
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    // Update the URL when the section becomes visible
-                    if (location.pathname !== "/#home") {
-                        window.history.pushState(null, "", "/#home");
-                    }
-                }
-            });
-        }, options);
-
-        const currentSectionRef = containerRef.current; // Store current ref value in a variable
-
-        if (currentSectionRef) {
-            observer.observe(currentSectionRef);
-        }
-
-        return () => {
-            if (currentSectionRef) {
-                observer.unobserve(currentSectionRef);
-            }
-        };
-    }, [location]);
 
     return (
         <Container sx={ContainerWrapperClass} ref={containerRef}>

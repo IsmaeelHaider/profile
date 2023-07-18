@@ -1,8 +1,7 @@
-import React, {FunctionComponent, useEffect, useRef} from "react";
+import React, {FunctionComponent, useRef} from "react";
 import styled from "styled-components";
 import {Container, Stack, Button, Typography} from "@mui/material";
 import ProfilePic from "../../assets/about/profile-pic.png";
-import {useLocation} from "react-router-dom";
 import {Link} from "react-router-dom";
 import {saveAs} from "file-saver";
 
@@ -34,39 +33,6 @@ const LeftSide = styled.div`
 
 const About: FunctionComponent = () => {
     const containerRef = useRef(null);
-
-    const location = useLocation();
-
-    useEffect(() => {
-        const options = {
-            root: null,
-            rootMargin: "0px",
-            threshold: 0.5,
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    // Update the URL when the section becomes visible
-                    if (location.pathname !== "/#about") {
-                        window.history.pushState(null, "", "/#about");
-                    }
-                }
-            });
-        }, options);
-
-        const currentSectionRef = containerRef.current; // Store current ref value in a variable
-
-        if (currentSectionRef) {
-            observer.observe(currentSectionRef);
-        }
-
-        return () => {
-            if (currentSectionRef) {
-                observer.unobserve(currentSectionRef);
-            }
-        };
-    }, [location]);
 
     const downloadPDF = () => {
         saveAs(require("../../download/IsmaeelHaider.pdf"), "IsmaeelHaider.pdf");

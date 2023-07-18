@@ -12,21 +12,6 @@ import Skills from "./components/sections/Skills";
 import Experience from "./components/sections/Experience";
 import Contact from "./components/sections/Contact";
 
-// const defaultTheme = createTheme({
-//     palette: {
-//         mode: "dark",
-//         primary: {
-//             main: "#1C1F24", // Background1
-//             dark: "#24282F"  // Background2
-//         },
-//         secondary: {
-//             main: "#FFFFFF", // Text
-//             contrastText: "#2363DC", // Buttons
-//             dark: "#606D81" // Separator
-//
-//         },
-//     },
-// });
 
 const defaultTheme = createTheme({
     palette: {

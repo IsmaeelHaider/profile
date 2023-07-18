@@ -1,4 +1,4 @@
-import React, {FunctionComponent, useEffect, useRef} from "react";
+import React, {FunctionComponent, useRef} from "react";
 import styled, {css} from "styled-components";
 import {
     Container,
@@ -11,7 +11,6 @@ import {
 import SkillsBoxes from "./SubSections/SkillsBoxes";
 import ToolsBoxes from "./SubSections/ToolsBoxes";
 
-import {useLocation} from "react-router-dom";
 
 const ContainerWrapperClass = {
     display: "flex",
@@ -42,38 +41,6 @@ const Skills: FunctionComponent = () => {
 
     const [alignment, setAlignment] = React.useState("skills");
 
-    const location = useLocation();
-
-    useEffect(() => {
-        const options = {
-            root: null,
-            rootMargin: "0px",
-            threshold: 0.5,
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    // Update the URL when the section becomes visible
-                    if (location.pathname !== "/#skills") {
-                        window.history.pushState(null, "", "/#skills");
-                    }
-                }
-            });
-        }, options);
-
-        const currentSectionRef = containerRef.current; // Store current ref value in a variable
-
-        if (currentSectionRef) {
-            observer.observe(currentSectionRef);
-        }
-
-        return () => {
-            if (currentSectionRef) {
-                observer.unobserve(currentSectionRef);
-            }
-        };
-    }, [location]);
 
     const handleChange = (event: React.MouseEvent<HTMLElement>, newAlignment: React.SetStateAction<string>) => {
         if (alignment !== newAlignment && newAlignment) {

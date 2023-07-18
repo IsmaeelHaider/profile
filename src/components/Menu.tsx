@@ -154,34 +154,34 @@ const Menu: FunctionComponent = () => {
     return (
         <MenuWrapper>
             <List sx={listStyle} component="nav" aria-label="LeftMenu">
-                <LinkWrapper to="#home">
+                <LinkWrapper to="/#home">
                     <ListItem sx={listItemWrap}>
                         <ListItemText primary="Home" sx={textStyle} />
                         <CottageOutlinedIcon sx={iconWrap} />
                     </ListItem>
                 </LinkWrapper>
                 {/* <Divider /> */}
-                <LinkWrapper to="#about">
+                <LinkWrapper to="/#about">
                     <ListItem sx={listItemWrap}>
                         <ListItemText primary="About" sx={textStyle} />
                         <AccountCircleIcon sx={iconWrap} />
                     </ListItem>
                 </LinkWrapper>
-                <LinkWrapper to="#skills">
+                <LinkWrapper to="/#skills">
                     <ListItem sx={listItemWrap}>
                         <ListItemText primary="Skills" sx={textStyle} />
                         <PsychologyIcon sx={iconWrap} />
                     </ListItem>
                 </LinkWrapper>
                 {/* <Divider light /> */}
-                <LinkWrapper to="#experience">
+                <LinkWrapper to="/#experience">
                     <ListItem sx={listItemWrap}>
                         <ListItemText primary="Experience" sx={textStyle} />
                         <ManageAccountsIcon sx={iconWrap} />
                     </ListItem>
                 </LinkWrapper>
                 {/* <Divider light /> */}
-                <LinkWrapper to="#contact">
+                <LinkWrapper to="/#contact">
                     <ListItem sx={listItemWrap}>
                         <ListItemText primary="Contact" sx={textStyle} />
                         <ContactMailIcon sx={iconWrap} />
