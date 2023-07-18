@@ -35,7 +35,7 @@ const Footer: FunctionComponent = () => {
             <Box color="secondary.main">
                 2023 Powered by:{" "}
                 <Link
-                    href="/"
+                    href="/profile"
                     underline="none"
                     sx={{
                         color: "secondary.main",
