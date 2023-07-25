@@ -29,7 +29,7 @@ Thank you for visiting my personal portfolio repository! I hope you enjoy explor
 
 ### Note:
 
-To view the portfolio website live, please visit the following link: https://www.ismaeelhaider.com
+To view the portfolio website live, please visit the following link: https://ismaeelhaider.github.io/profile
 
 If you have any questions or need further information, don't hesitate to reach out.
 
